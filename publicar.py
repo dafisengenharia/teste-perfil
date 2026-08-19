@@ -8,8 +8,8 @@
 import os, subprocess, sys, io
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-FONTE = ("G:\Drives compartilhados\Administrativo - Dafis\Recursos Humanos - Recrutamento e "
-         "Sele\u00e7\u00e3o\Teste de Perfil Comportamental\Dafis - Teste de Perfil.html")
+FONTE = ("G:/Drives compartilhados/Administrativo - Dafis/Recursos Humanos - Recrutamento e "
+         "Seleção/Teste de Perfil Comportamental/Dafis - Teste de Perfil.html")
 
 def git(*args):
     return subprocess.run(("git",) + args, cwd=AQUI, capture_output=True, text=True, encoding="utf-8")
